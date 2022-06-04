@@ -32,7 +32,8 @@ void bubbleSort(int* A, int n){
         flag = 1;
       }
     }
+
     if(!flag)
-      break;
+      ;//break;
   }
 }

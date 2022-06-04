@@ -2,10 +2,13 @@
 #include"sort.h"
 
 int main(){
-    int A[] = {4,3,5,9,1};
+    int A[] = {9,4,3,2,1,8,2,4,9,6,3};
+    int len = sizeof(A)/sizeof(A[0]);
 
-    ALGO(A,5);
+    printf("%d elements\n", len);
 
-    for(int i=0; i<5; i++)
+    ALGO(A,len);
+
+    for(int i=0; i<len; i++)
         printf("\t%d", A[i]);
 }
