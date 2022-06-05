@@ -34,6 +34,24 @@ void bubbleSort(int* A, int n){
     }
 
     if(!flag)
-      ;//break;
+      break;
   }
+}
+
+void insertionSort(int* A, int n){
+  int temp;
+  int hole;
+
+  for(int i=1; i<n; i++){
+    hole = i;
+    temp = A[i];
+
+    while(hole>0 && A[hole-1] > temp){
+      A[hole] = A[hole-1];
+      hole--;
+    }
+
+    A[hole] = temp;
+  }
+
 }
